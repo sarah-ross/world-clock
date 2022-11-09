@@ -20,11 +20,35 @@
 			href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
 			rel="stylesheet"
 		/>
-      <link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="/src/styles.css" />
 		<title>World Clock by Sarah Ross</title>
 	</head>
 	<body>
-		<h1>World Clock</h1>
+		<main>
+			<h1>World Clock</h1>
+			<label for="cities">Select a city...</label>
+			<select name="cities" id="cities">
+				<option value="new york">New York</option>
+				<option value="london">London</option>
+				<option value="bangkok">Bangkok</option>
+			</select>
+		</main>
+		<ul>
+			<li>
+				<h2>New York</h2>
+				<small>Date goes here</small>
+			</li>
+			<li>
+				<h3>Timestamp goes here</h3>
+			</li>
+			<li>
+				<h2>New York</h2>
+				<small>Date goes here</small>
+			</li>
+			<li>
+				<h3>Timestamp goes here</h3>
+			</li>
+		</ul>
 		<footer>
 			Open-source code by Sarah Ross on
 			<a
@@ -33,5 +57,6 @@
 				>GitHub.</a
 			>
 		</footer>
+		<script src="/src/world-clock.js"></script>
 	</body>
 </html>
