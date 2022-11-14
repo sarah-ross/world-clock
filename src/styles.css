@@ -7,10 +7,11 @@ body {
 }
 
 body {
-	background-image: url("/src/world-clock-bg.jpg");
+	background-image: url("https://images.unsplash.com/photo-1581904902287-0991e3fd1725?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHdvcmxkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	backdrop-filter: contrast(85%);
 	font-family: "Rubik", sans-serif;
 	font-weight: 300;
 }
@@ -59,7 +60,6 @@ small {
 	padding: 15px;
 	border-radius: 6px;
 	background-color: rgba(0, 0, 0, 0.5);
-	backdrop-filter: blur(7px);
 }
 
 .city-and-time,
