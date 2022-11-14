@@ -21,6 +21,8 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/src/styles.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.38/moment-timezone-with-data-1970-2030.min.js"></script>
 		<title>World Clock by Sarah Ross</title>
 	</head>
 	<body>
@@ -36,17 +38,13 @@
 		<main class="container">
 			<div class="city-and-time">
 				<h3>New York</h3>
-				<h2>10:17:51<small>PM</small></h2>
+				<h2 id="new-york-time">
+				</h2>
 			</div>
 			<div class="date">November 13, 2022</div>
 			<div class="city-and-time">
 				<h3>Tokyo</h3>
-				<h2>10:17:51<small>PM</small></h2>
-			</div>
-			<div class="date">November 13, 2022</div>
-			<div class="city-and-time">
-				<h3>Sydney</h3>
-				<h2>10:17:51<small>PM</small></h2>
+				<h2 id="tokyo-time"></h2>
 			</div>
 			<div class="date">November 13, 2022</div>
 		</main>

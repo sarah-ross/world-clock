@@ -3,7 +3,6 @@ body {
 	margin: 0;
 	height: 100%;
 	overflow: hidden;
-	font-family: "Rubik", sans-serif;
 	color: rgba(207, 247, 247, 0.8);
 }
 
@@ -12,7 +11,8 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	backdrop-filter: contrast(80%);
+	font-family: "Rubik", sans-serif;
+	font-weight: 300;
 }
 
 h1,
@@ -22,7 +22,7 @@ footer {
 }
 
 h1 {
-	margin-top: 80px;
+	margin-top: 100px;
 	font-size: 54px;
 }
 
@@ -30,6 +30,7 @@ label,
 select {
 	display: block;
 	margin: 20px auto;
+	font-size: 18px;
 }
 
 select {
@@ -37,7 +38,7 @@ select {
 	padding: 8px;
 	border-radius: 4px;
 	background: transparent;
-	color: rgb(207, 247, 247);
+	color: rgba(207, 247, 247, 0.8);
 	border: 1px solid #9f89fb;
 }
 
@@ -54,7 +55,7 @@ small {
 
 .container {
 	max-width: 700px;
-	margin: 40px auto;
+	margin: 60px auto;
 	padding: 15px;
 	border-radius: 6px;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -83,10 +84,11 @@ small {
 	position: relative;
 	top: -25px;
 	padding-bottom: 30px;
-	opacity: 0.6;
+	opacity: 0.7;
 	border-bottom: 1px dotted #9f89fb;
 }
 
 .date:last-child {
 	border-bottom: none;
+	padding-bottom: unset;
 }
