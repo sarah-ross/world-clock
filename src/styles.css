@@ -64,6 +64,19 @@ small {
 	border-radius: 6px;
 	background-color: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(7px);
+	animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .city-and-time,
@@ -74,6 +87,17 @@ small {
 .city-and-time {
 	display: flex;
 	justify-content: space-between;
+	animation: fadeIn 750ms ease-in-out;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .city-and-time h3 {
