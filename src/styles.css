@@ -7,11 +7,10 @@ body {
 }
 
 body {
-	background-image: url("https://images.unsplash.com/photo-1581904902287-0991e3fd1725?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHdvcmxkfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
+	background-image: url("/src/world-clock-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	backdrop-filter: contrast(85%);
 	font-family: "Rubik", sans-serif;
 	font-weight: 300;
 }
@@ -24,6 +23,7 @@ footer {
 h1 {
 	margin-top: 100px;
 	font-size: 3.5em;
+	font-weight: 300;
 }
 
 select {
@@ -86,7 +86,7 @@ small {
 
 .date {
 	position: relative;
-	top: -25px;
+	top: -30px;
 	padding-bottom: 30px;
 	opacity: 0.7;
 	border-bottom: 1px dotted #9f89fb;

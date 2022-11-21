@@ -1,10 +1,11 @@
 function displayCurrentTimes() {
 	// New York
-	let dateElement = document.querySelector(
+	let newYorkDateElement = document.querySelector(
 		".new-york-date"
 	);
 	let currentDate = moment().format("MMMM Do, YYYY");
-	dateElement.innerHTML = currentDate;
+	newYorkDateElement.innerHTML = currentDate;
+
 	let newYorkTimeElement = document.querySelector(
 		"#new-york-time"
 	);
@@ -12,8 +13,11 @@ function displayCurrentTimes() {
 		.tz("America/New_York")
 		.format("hh:mm:ss[<small>]A[</small>]");
 	newYorkTimeElement.innerHTML = newYorkTime;
+
 	// Tokyo
-	document.querySelector(".tokyo-date").innerHTML = moment()
+	let tokyoDateElement =
+		document.querySelector(".tokyo-date");
+	tokyoDateElement.innerHTML = moment()
 		.tz("Asia/Tokyo")
 		.format("MMMM Do, YYYY");
 	let tokyoTimeElement =
@@ -22,11 +26,15 @@ function displayCurrentTimes() {
 		.tz("Asia/Tokyo")
 		.format("hh:mm:ss[<small>]A[</small>]");
 	tokyoTimeElement.innerHTML = tokyoTime;
+
+	// Sydney
 	let sydneyTimeElement =
 		document.querySelector("#sydney-time");
-
-	document.querySelector(".sydney-date").innerHTML =
-		moment().tz("Australia/Sydney").format("MMMM Do, YYYY");
+	let sydneyDateElement =
+		document.querySelector(".sydney-date");
+	sydneyDateElement.innerHTML = moment()
+		.tz("Australia/Sydney")
+		.format("MMMM Do, YYYY");
 	let sydneyTime = moment()
 		.tz("Australia/Sydney")
 		.format("hh:mm:ss[<small>]A[</small>]");
