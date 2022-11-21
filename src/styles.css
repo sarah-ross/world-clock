@@ -140,6 +140,16 @@ small {
 }
 
 @media (max-width: 425px) {
+	html, body {
+		overflow: scroll;
+	}
+
+	body {
+	background-image: url("/src/world-clock-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	}
+	
 	select {
 		width: max-content;
 	}
