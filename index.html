@@ -28,24 +28,36 @@
 	<body>
 		<header>
 			<h1>World Clock</h1>
-			<label for="cities">Select a city...</label>
+			<label for="cities">Select a city:</label>
 			<select name="cities" id="cities">
-				<option value="new york">New York</option>
-				<option value="london">London</option>
-				<option value="bangkok">Bangkok</option>
+				<option value="">...</option>
+				<option value="America/Anchorage">Anchorage</option>
+				<option value="America/Phoenix">Phoenix</option>
+				<option value="Australia/Victoria">Victoria</option>
+				<option value="Brazil/Acre">Acre</option>
+				<option value="Canada/Yukon">Yukon</option>
+				<option value="Europe/Dublin">Dublin</option>
+				<option value="Europe/London">London</option>
+				<option value="Asia/Bangkok">Bangkok</option>
+				<option value="Asia/Jerusalem">Jerusalem</option>
+				<option value="Pacific/Samoa">Samoa</option>
 			</select>
 		</header>
 		<main class="container">
-			<div class="city-and-time">
-				<h3>New York</h3>
-				<h2 id="new-york-time"></h2>
+			<div id="display-city">
+				<div class="city-and-time">
+					<h3>New York</h3>
+					<h2 id="new-york-time"></h2>
+				</div>
+				<div class="date new-york-date">
+					November 13, 2022
+				</div>
+				<div class="city-and-time">
+					<h3>Tokyo</h3>
+					<h2 id="tokyo-time"></h2>
+				</div>
+				<div class="date tokyo-date">November 13, 2022</div>
 			</div>
-			<div class="date">November 13, 2022</div>
-			<div class="city-and-time">
-				<h3>Tokyo</h3>
-				<h2 id="tokyo-time"></h2>
-			</div>
-			<div class="date tokyo-date">November 13, 2022</div>
 		</main>
 		<footer>
 			Open-source code by Sarah Ross on
