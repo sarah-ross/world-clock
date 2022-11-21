@@ -28,9 +28,9 @@
 	<body>
 		<header>
 			<h1>World Clock</h1>
-			<label for="cities">Select a city:</label>
 			<select name="cities" id="cities">
-				<option value="">...</option>
+				<option value="">Select a city...</option>
+				<option value="current">My location</option>
 				<option value="America/Anchorage">Anchorage</option>
 				<option value="America/Phoenix">Phoenix</option>
 				<option value="Australia/Victoria">Victoria</option>
@@ -49,14 +49,17 @@
 					<h3>New York</h3>
 					<h2 id="new-york-time"></h2>
 				</div>
-				<div class="date new-york-date">
-					November 13, 2022
-				</div>
+				<div class="date new-york-date"></div>
 				<div class="city-and-time">
 					<h3>Tokyo</h3>
 					<h2 id="tokyo-time"></h2>
 				</div>
-				<div class="date tokyo-date">November 13, 2022</div>
+				<div class="date tokyo-date"></div>
+				<div class="city-and-time">
+					<h3>Sydney</h3>
+					<h2 id="sydney-time"></h2>
+				</div>
+				<div class="date sydney-date"></div>
 			</div>
 		</main>
 		<footer>

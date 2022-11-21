@@ -17,25 +17,20 @@ body {
 }
 
 h1,
-label,
 footer {
 	text-align: center;
 }
 
 h1 {
 	margin-top: 100px;
-	font-size: 54px;
+	font-size: 3.5em;
 }
 
-label,
 select {
 	display: block;
-	margin: 20px auto;
-	font-size: 18px;
-}
-
-select {
-	width: 400px;
+	margin: 50px auto;
+	font-size: 1.15em;
+	width: 350px;
 	padding: 8px;
 	border-radius: 4px;
 	background: transparent;
@@ -43,15 +38,23 @@ select {
 	border: 1px solid #9f89fb;
 }
 
-small,
 footer a {
-	color: #9f89fb;
+	color: white;
+	opacity: 0.7;
+	font-weight: 600;
+	transition: all 250ms ease-in-out;
+}
+
+footer a:is(:hover, :focus) {
+	color: white;
+	opacity: 1;
 }
 
 small {
-	font-size: 20px;
+	font-size: 0.5em;
 	vertical-align: middle;
 	padding-left: 10px;
+	color: #9f89fb;
 }
 
 .container {
@@ -60,6 +63,7 @@ small {
 	padding: 15px;
 	border-radius: 6px;
 	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(7px);
 }
 
 .city-and-time,
@@ -73,11 +77,11 @@ small {
 }
 
 .city-and-time h3 {
-	font-size: 36px;
+	font-size: 2.25em;
 }
 
 .city-and-time h2 {
-	font-size: 42px;
+	font-size: 2.75em;
 }
 
 .date {
@@ -89,6 +93,31 @@ small {
 }
 
 .date:last-child {
-	border-bottom: none;
+	border-bottom: unset;
 	padding-bottom: unset;
+}
+
+@media (max-width: 425px) {
+	select {
+		width: max-content;
+	}
+
+	.city-and-time,
+	.date {
+		text-align: center;
+	}
+
+	.city-and-time {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.city-and-time h2 {
+		margin-bottom: 40px;
+		margin-top: 15px;
+	}
+
+	.city-and-time h3 {
+		margin-bottom: unset;
+	}
 }
