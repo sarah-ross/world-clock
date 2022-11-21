@@ -55,6 +55,7 @@ function updateCityData(event) {
 	let cityDataElement =
 		document.querySelector("#display-city");
 	cityDataElement.innerHTML = `
+	<a href="index.html" class="back-link">← Back to all cities</a>
 				<div class="city-and-time">
 					<h3>${selectedCity}</h3>
 					<h2 id="new-york-time">${cityTime.format(

@@ -80,7 +80,8 @@ small {
 }
 
 .city-and-time,
-.date {
+.date,
+.back-link {
 	padding: 0 15px;
 }
 
@@ -119,6 +120,23 @@ small {
 .date:last-child {
 	border-bottom: unset;
 	padding-bottom: unset;
+}
+
+.back-link {
+	display: block;
+	margin: 0 auto;
+	padding-top: 15px;
+	color: #18c1de;
+	opacity: 0.8;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	letter-spacing: 0.5px;
+	transition: all 250ms ease-in-out;
+}
+
+.back-link:is(:hover, :focus) {
+	color: #9f89fb;
 }
 
 @media (max-width: 425px) {
