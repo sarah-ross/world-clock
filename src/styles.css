@@ -140,12 +140,12 @@ small {
 }
 
 @media (max-width: 425px) {
-	html, body {
-		overflow: visible;
-	}
-
 	select {
 		width: max-content;
+	}
+
+	.container {
+		overflow: visible;
 	}
 
 	.city-and-time,
