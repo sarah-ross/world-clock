@@ -125,7 +125,7 @@ small {
 .back-link {
 	display: block;
 	margin: 0 auto;
-	padding-top: 15px;
+	padding-top: 20px;
 	color: #18c1de;
 	opacity: 0.8;
 	text-align: center;
@@ -140,6 +140,10 @@ small {
 }
 
 @media (max-width: 425px) {
+	html, body {
+		overflow: visible;
+	}
+
 	select {
 		width: max-content;
 	}
